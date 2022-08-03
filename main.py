@@ -1,5 +1,5 @@
 import discord
-
+import os
 
 client = discord.Client()
 
@@ -19,5 +19,5 @@ asyync def on_message(message):
     if message.content.startswith("Hi"):
         await client.send_message(message.channel, "Hi")
         
-        
+access_token = os.environ["BOT_TOKEN"]
 client.run('token')
