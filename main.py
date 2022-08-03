@@ -127,5 +127,5 @@ async def on_member_join(member):
         if not str(member.id) in str(list):
             await member.kick(reason='초대주소 발급명단에 미존재함')
             
-access_token = os.environ["BOT_TOKEN
+access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
