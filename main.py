@@ -1,6 +1,7 @@
 token = '토큰'
 guild_id = '본서버 아아디'
 
+import os
 import discord, asyncio, re, os, json, shutil
 from discord_components import DiscordComponents, Button, ButtonStyle, Select, SelectOption
 from collections import OrderedDict
@@ -126,5 +127,5 @@ async def on_member_join(member):
         if not str(member.id) in str(list):
             await member.kick(reason='초대주소 발급명단에 미존재함')
             
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN
+client.run(access_token)
